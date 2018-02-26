@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Caesar Cipher</title>
+		<link rel="stylesheet" type="text/css" href="./css/cipherStyle.css">
+		<script type="text/javascript" src="./js/javascript.js"></script>
+	</head>
+	<body>
+		<div id="navigationBar" class="sidenav">
+			<a href="index.html" id="homeNav">Home</a>
+			<a href="Atbash%20Cipher.html" id="aboutNav">Atbash Cipher</a>
+			<a href="Vigen%C3%A8re%20Cipher.html" id="ciphersNav">Vigenere Cipher</a>
+			<a href="documentation.html" id="documentationNav">Design</a>
+		</div>
+		<form class="form" id="box1" action="#" method="get" onsubmit="return false;">
+			<table>
+				<tbody>
+					<tr>
+						<td><textarea id="text" cols="50" rows="10">Web Technologies Coursework, Petru Burlacu 40285539</textarea></td>
+					</tr>
+					<tr>
+						<td><label>The shift value must be an integer between 0 and 25</label></td>
+						<td><input type="text" id="shiftBy" value="13"/></td>
+						<td><label>Default value of 13 corresponds to the ROT13 cipher</label></td>
+					</tr>
+					<tr>
+						<td>
+							<input id="button" type="button" value="Encrypt" onclick="checkStateCaesar(false);"/>
+							<input id="button" type="button" value="Decrypt" onclick="checkStateCaesar(true);"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div class="form" id="box2">
+			<p>Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.The encryption step performed by a Caesar cipher is often incorporated as part of more complex schemes, such as the Vigenère cipher, and still has modern application in the ROT13 system. As with all single-alphabet substitution ciphers, the Caesar cipher is easily broken and in modern practice offers essentially no communication security.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vigenère Cipher</title>
+		<link rel="stylesheet" type="text/css" href="./css/cipherStyle.css">
+		<script type="text/javascript" src="./js/javascript.js"></script>
+	</head>
+	<body>
+		<div id="navigationBar" class="sidenav">
+			<a href="index.html" id="homeNav">Home</a>
+			<a href="Atbash%20Cipher.html" onclick="yourFunction(); return false" id="aboutNav">Atbash Cipher</a>
+			<a href="Caesar%20Cipher.html" id="ciphersNav">Caesar Cipher</a>
+			<a href="documentation.html" id="documentationNav">Design</a>
+		</div>
+		<form class="form" id="box1" action="#" method="get" onsubmit="return false;">
+			<table>
+				<tbody>
+					<tr>
+						<td><textarea id="text" cols="50" rows="10">Web Technologies Coursework, Petru Burlacu 40285539</textarea></td>
+					</tr>
+					<tr>
+						<td><label>Passphrase</label></td>
+						<td><input type="text" id="shiftBy" value="random"/></td>
+					</tr>
+					<tr>
+						<td>
+							<input id="button" type="button" value="Encrypt" onclick="checkStateVigenere(false);"/>
+							<input id="button" type="button" value="Decrypt" onclick="checkStateVigenere(true);"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div class="form" id="box2">
+			<p>A 16th century French diplomat, Blaise de Vigenere, created a very simple cipher that is moderately difficult for any unintended parties to decipher. It is somewhat like a variable Caesar cipher, but the N changed with every letter. You would "encode" your message with a passphrase, and the letters of your passphrase would determine how each letter in the message would be encrypted. This is the exact opposite of a "Variant Beaufort." To do the variant, just "decode" your plain text to get the cipher text and "encode" the cipher text to get the plain text again.If you wanted even more security, you can use two passphrases to create a keyed Vigenere cipher, just like the one that stumped cryptologists for years. Again, a pretty simple trick, but it can ensure that your message is even harder to crack.</p>
+		</div>
+	</body>
+</html>

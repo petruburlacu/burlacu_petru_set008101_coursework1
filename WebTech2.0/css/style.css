@@ -1,0 +1,343 @@
+/*
+Name: Petru-Marian Burlacu
+Module: Web Technologies
+Course: Web Design and Development
+Year: Second (2nd) Year Student
+University: Edinburgh Napier University
+Coursework: Assignment 1 | Cipher
+Description:  HTML Website to present Ciphers using javascript
+
+--------------------------------
+*/
+
+
+/* --------------------------------
+   Main CSS
+---------------------------------*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+#main {
+    height: 100hv;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ----------------- Header -------------------- */
+#cipher {
+    width: 25%;
+    font-size: 16cm;
+    font-family: fantasy;
+    line-height: 16.5cm;
+    background-image: url(../images/case2.jpeg);
+    background-position: -100px 0px; /*IMAGE POSITIONING FOR A BETTER VIEW */
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /*MASKING TEXT*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
+}
+
+#header {
+    position: relative;
+    width: 400%;
+    margin: 0px;
+}
+
+/* ----------------- About Section -------------------- */
+#about {
+    height: 100vh;
+    width 100%;
+    text-align: center;
+    background-color: white;
+    height: auto;
+    max-width: 1680px;
+    height: 0 auto;
+    margin: 10px auto;
+    background-color: #efefef;
+    margin-top: -1%;
+    margin-bottom: 2%;
+    overflow:hidden; 
+    padding: 10px;
+}
+
+#about p {
+    font-family:serif;
+    text-indent: inherit;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: inline-grid;
+    max-width: 600px;
+    padding: 5%;
+    text-align: justify;
+}
+
+#about-letter {
+    margin-bottom: -5%;
+    margin-left: -2%;
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.1);
+    letter-spacing: 50px;
+    max-width: 100%;
+    font-size: 10cm;
+    font-family: fantasy;
+    line-height: 10cm;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+    background-blend-mode: multiply,multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /*MASKING TEXT*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    overflow:visible;
+}
+
+/* ----------------- Ciphers section -------------------- */
+
+#ciphers {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#ciphers-content {
+    padding-top: 0.1px;
+    padding: 2%;
+    margin-left: 5.3%;
+    margin-right: 5.3%;
+    max-width: 100hv;
+    float: top;
+    /* 
+    */
+    background-image: url('../images/parallax.jpg');
+    
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cipher-border {
+    width: 155.vh;
+    position: relative;
+    padding-bottom: 1%;
+    
+    border: 15px solid white;
+    
+}
+
+.cipher-inner-box {
+    margin: 0.5%;
+    width: 99%;
+    height: 87%;
+    
+    text-align: center;
+    font-family: fantasy;
+    background: white;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.4);
+    border-radius: 7px 7px 7px 7px; /* Rounded corners on the top right and bottom right side */
+}
+
+.cipher-inner-box p, .cipher-inner-box h3 {
+    color: #989898;
+    font-family:serif;
+    text-align: center;
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+#parallax {
+    margin-left: 5.3%;
+    margin-right: 5.3%;
+    max-width: 100hv;
+    float: top;
+    /* 
+    */
+    background-image: url('../images/parallax.jpg');
+    
+    height: 28vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------- Navigation Menu -------------------- */
+#navigationBar a {
+    position: fixed; /* Position them relative to the browser window */
+    right: -134px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 120px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    text-align: right;
+    font-family: arial black;
+    z-index: 100;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.1);
+}
+
+#navigationBar a:hover {
+    right: 0px; /* On mouse-over, make the elements appear as they should */
+    text-align: left;
+}
+
+/* The about link: 20px from the top with a green background */
+#homeNav {
+    top: 60%;
+    background-color: black;
+    color: color: rgba (230,230,230,0.9);
+}
+
+#aboutNav {
+    top: 66%;
+    background-color: black;
+    color: color: rgba (230,230,230,0.9);
+}
+
+#ciphersNav {
+    top: 72%;
+    background-color: black;
+    color: color: rgba (230,230,230,0.9);
+}
+
+#documentationNav {
+    top: 78%;
+    background-color: black;
+    color: color: rgba (230,230,230,0.9);
+}
+
+
+/* ----------------- Button -------------------- */
+.button {
+     color: #808080;
+     font-size: 30px;
+     padding: 7px 1px;
+     font-weight: normal;
+     margin: 0;
+     display: inline-block;
+     text-decoration: none;
+     font-family: 'Open Sans', sans-serif;
+     text-align: center;
+     width: 480px;
+    border-bottom: 1.5px solid #808080;
+    margin-bottom: 1%;
+    
+    
+}
+
+.button:hover, .button:active {
+    color:#808080;
+    font-size: 40px;
+    border: 2px solid #808080;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+    
+}
+
+.line {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:white;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#efefef));
+}
+
+/* ------ Typography ------ */
+
+a {
+    color: #383838;
+    transition: all 0.5s;
+}
+a:focus {
+    outline: 0;
+}
+a:hover,
+a:focus {
+    color: #7beec7;
+    text-decoration: none;
+}
+a,
+a:visited {
+    font-weight: 400;
+    text-decoration: none;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: 500;
+}
+small {
+    font-size: 0.8em;
+}
+p {
+    color: #111111;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 100;
+    clear: both;
+    letter-spacing: 0.4px;
+}
+hr {
+    width: 40px;
+    height: 1px;
+    background: #111111;
+    border-top: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    clear: both;
+    float: left;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lekton', sans-serif;
+    letter-spacing: 1.3pt;
+    color: #111111;
+    clear: both;
+    padding-bottom: 5px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */

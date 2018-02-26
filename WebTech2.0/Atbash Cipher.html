@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atbash Cipher</title>
+		<link rel="stylesheet" type="text/css" href="./css/cipherStyle.css">
+		<script type="text/javascript" src="./js/javascript.js"></script>
+	</head>
+	<body>
+		<div id="navigationBar" class="sidenav">
+			<a href="index.html" id="homeNav">Home</a>
+			<a href="Vigen%C3%A8re%20Cipher.html" id="aboutNav">Vigenere Cipher</a>
+			<a href="Caesar%20Cipher.html" id="ciphersNav">Caesar Cipher</a>
+			<a href="documentation.html" id="documentationNav">Design</a>
+		</div>
+		<form class="form" id="box1" action="#" method="get" onsubmit="return false;">
+			<table>
+				<tbody>
+					<tr>
+						<td><textarea id="text" cols="50" rows="10">Web Technologies Coursework, Petru Burlacu 40285539</textarea></td>
+					</tr>
+					<tr>
+						<td><label>This is your encoded/decoded text</label></td>
+					</tr>
+					<tr>
+						<td>
+							<input id="button" type="button" value="Execute" onclick="document.getElementById('text').value = atBash(document.getElementById('text').value);"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div class="form" id="box2">
+			<p>Atbash cipher is a very common, simple cipher. It was for the Hebrew alphabet, but modified here to work with the English alphabet. Basically, when encoded, an "A" becomes a "Z", "B" turns into "Y" and so on. The Atbash cipher can be implemented as an Affine cipher by setting both "a" and "b" to 25.</p>
+		</div>
+	</body>
+</html>
